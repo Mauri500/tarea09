@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color1:#fd001d;
+    --color2:#ffffff;
+    --color3:#ffff00;
+    --color4:#ac1212;
+}
+main{
+    width: 100%;
+}
+header{ /*encabezado de la página*/
+    background-color: var(--color1);
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    width: 150px;
+}
+#logo img{
+    width: 100%;
+}
+#menu{ /*ordenamiento de elementos de la barra de navegación*/
+    list-style-type: none;
+    height: 50px;
+    display: flex;
+    align-items: center;  
+}
+#menu li{
+    margin: 50px /*separación de cada elemento*/
+}
+#menu li a{ /*contenido dentro de cada elemento en barra de navegación*/
+    text-decoration: none;
+    padding: 10px;
+    color: var(--color2);
+    font-size: 18px;
+    font-weight: bold;
+}
+#menu li a:hover{ /*efecto al pasar el mouse por encima*/
+    color: var(--color3);
+}
+section{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#tabla_main,.formulario, #mapa,#tabla_footer{
+    border: 2px dotted var(--color1);
+}
+h1{
+    color: var(--color4);
+    font-size: 25px;
+}
+/*Tabla*/
+#tabla{
+    margin: auto;
+}
+#tabla h1{
+    padding-left: 20px;
+}
+#tabla tr{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row;
+}
+#tabla td, #tabla th{
+    padding:5px;
+}
+/*Fin de Tabla*/
+.formulario{ /*Estilos para el Formulario*/
+    width:300px;
+    margin:0px auto;
+    padding:15px;
+}
+input,textarea{
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+}
+.boton{
+    text-align: center;
+}
+.btn{
+    color:var(--color2);
+    background-color: #3d3c3c;
+    border-radius: 5px;  
+    padding:5px;
+    margin-top:10px;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+} /*Fin de estilos para el Formulario*/
+/*mapa*/
+aside{
+    padding-top: 30px;
+    padding-left: 5px;
+}
+/*footer*/
+footer{
+    background-color: var(--color4);
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#tabla_footer{
+    border-collapse: collapse;
+    margin: auto;
+    color: var(--color2);
+}
+#tabla_footer tr{
+    padding-left: 10px;
+}
+#tabla_footer th{
+    font-size: 20px;
+    text-align: left;
+}
+#tabla_footer td, #tabla_footer th{
+    padding:5px;
+}
+hr{
+    border: 1px solid grey;
+}
